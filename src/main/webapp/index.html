@@ -222,8 +222,10 @@
             <div id="progressBar"></div>
           </div>
           <div id="buttons">
-            <button type="button" id="playButton"></button>
-            <button type="button" id="muteButton"></button>
+            <button type="button" id="playButton">PLAY</button>
+            <button type="button" id="muteButton">MUTE</button>
+			<button type="button" id="backButton" onclick="back()">BACK</button>
+			<button type="button" id="loopButton" onclick="loop()">LOOP</button>
             <span id="currentTime">0:00</span>
             /<span id="fullDuration">0:00</span>
           </div>
@@ -399,6 +401,17 @@
 
 	}
 
+</script>
+<script>
+	function back() {
+		alert("BACK");
+		//TODO send player back to 0.00
+	}
+	
+	function loop() {
+		alert("LOOP");
+		//TODO once each song finishes, send player back to 0.00
+	}
 </script>
 <script type="text/javascript" src="/assets/js/controls.js"></script>
 
